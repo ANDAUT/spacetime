@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+            <!--links my javascript file to the html file-->
+            <script src="spacelog.js"></script>
+            <!--links this file with the loginStyle file-->
+            <link href="loginStyle.css" rel="stylesheet" type="text/css" />
+<head>
+    
+
+    <title>UAT Space Program</title>
+    <style>
+        body
+        {
+            background: rgb(166, 166, 166);
+            background: linear-gradient(0deg, rgb(25, 0, 90) 0%, rgb(0, 0, 0) 50%);
+        }     
+          
+        img
+        {   display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 100%;}
+        button
+        {border-radius: 100%;
+            width:5%;
+    margin-left:47.5%;
+    margin-right:25%;}
+        h1
+        {text-align: center;}
+        p
+        {text-align: center;}
+        p
+        {color: rgb(255, 255, 255);}
+
+    </style>
+<!--Stylish stuff.  Mostly to help make the page look a little more 'spacey'-->
+</head>
+<body>
+
+    <img src = "UATspaceLogo-2.jpg">
+
+    <h1 style="color: rgb(255, 255, 255);">
+        UAT Space Program
+    </h1>
+    <h1>
+        Please enter a valid badge ID
+    </h1>
+    <br>
+    <p id="loginStatus" class="loginID">Status of login...</p>
+    <!--loginStatus will change if any of the later fields are input incorrectly-->
+    <br>
+    <form id="credSubmit" onsubmit="return false">
+        First Name:     <input type="text" id="firstN" /> <br>
+        Last Name:      <input type="text" id="lastN" /> <br>
+        Badge Number:   <input type="number" id="badgeNum" /> <br>
+        <input type="submit" onclick="validate();" />
+    </form>
+</body>
+</html>
